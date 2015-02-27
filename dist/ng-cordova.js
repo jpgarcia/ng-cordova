@@ -4135,7 +4135,9 @@ angular.module('ngCordova.plugins.media', [])
         q.promise.stopRecord = function () {
           media.stopRecord();
         };
-
+ 	
+ 	q.promise.media = media;
+ 	
         return q.promise;
       }
     };
